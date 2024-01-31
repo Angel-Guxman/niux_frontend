@@ -1,0 +1,56 @@
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    80% {
+        transform: translateY(0);
+    }
+}
+
+.animateFromRight {
+    animation: slideInFromRight 0.7s forwards;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.animateFromLeft {
+    animation: slideInFromLeft 0.7s forwards;
+}
+
+.typing-effect {
+    font-size: 26px;
+    font-family: Arial, sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.typing-cursor {
+    display: inline-block;
+    width: 3px;
+    height: 24px;
+    background-color: rgb(212, 116, 250);
+    animation: blinkCursor 0.7s infinite;
+}
+
+
+@keyframes blinkCursor {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}

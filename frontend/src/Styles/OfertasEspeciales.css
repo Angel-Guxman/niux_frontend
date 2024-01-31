@@ -1,0 +1,44 @@
+
+.ofertasEspeciales {
+    width: 100%;
+    overflow: hidden; /* Para que no muestre barras de desplazamiento */
+}
+.ofertasEspeciales {
+    display: flex; /* Alinear los elementos de oferta horizontalmente */
+    overflow-x: auto; /* Permitir desplazamiento horizontal */
+    white-space: nowrap; /* Asegurarse de que los elementos no se envuelvan a la siguiente línea */
+    touch-action: pan-y; /* Optimize para desplazamiento vertical con un dedo y horizontal con dos */
+}
+
+.oferta {
+    flex: 0 0 auto; /* No crecer, no encoger, auto base width */
+    margin-right: 16px; /* Espacio entre ofertas */
+    box-sizing: border-box;
+    transition: box-shadow 0.3s;
+}
+.oferta:hover{
+    box-shadow: 0 0 10px rgba(128, 0, 128, 0.7); /* Sombra morada al hacer hover */
+}
+.oferta img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Elimina el espacio adicional debajo de la imagen */
+}
+
+.precioOriginal {
+    text-decoration: line-through; /* Efecto tachado */
+    color: #999; /* Color gris */
+}
+
+.precioDescuento {
+    color: #b400e6; /* Color rojo */
+    font-weight: bold;
+    font-size: large;
+}
+.ofertasEspeciales::-webkit-scrollbar {
+    display: none; /* Oculta la barra de desplazamiento en navegadores WebKit como Chrome y Safari */
+}
+
+.ofertasEspeciales {
+    -ms-overflow-style: none; /* Oculta la barra de desplazamiento en IE y Edge */
+}

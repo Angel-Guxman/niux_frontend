@@ -1,0 +1,71 @@
+@keyframes scroll {
+    0% {
+      transform: translatex(0);
+    }
+    100% {
+      transform: translatex(-30%);
+    }
+  }
+
+/*carrusel*/
+  .infinite-scroll {
+    animation: scroll 5s linear infinite;
+  }
+
+  .carrusel {
+    position: relative;
+    margin: auto;
+    height: 420px;
+    
+  }
+ 
+  .carrusel img {
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s ease-in-out; /* Añade esta línea */
+    opacity: 0; /* Añade esta línea */
+  }
+  .carrusel img.mostrar {
+    opacity: 1;
+}
+
+  
+  .carrusel button {
+    position: absolute;
+    top: 65%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.426);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+  
+  .carrusel button:hover {
+    background-color: rgb(251, 246, 246)
+  }
+  
+  .carrusel button:last-child {
+    right: 0;
+  }
+  .texto-sobre-imagen {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  }
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-35%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.5, 1);
+  }
+}
+  

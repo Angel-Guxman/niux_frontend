@@ -1,0 +1,13 @@
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%); /* Se desplaza solo la mitad del ancho total, ya que hemos duplicado las imágenes */
+    }
+  }
+  
+  .marcas-scroll {
+    animation: scroll 25s linear infinite;
+  }
+  

@@ -1,0 +1,27 @@
+
+.productosNuevos {
+    display: flex; /* Alinear los elementos de oferta horizontalmente */
+    overflow-x: auto; /* Permitir desplazamiento horizontal */
+    white-space: nowrap; /* Asegurarse de que los elementos no se envuelvan a la siguiente línea */
+    touch-action: pan-y; /* Optimize para desplazamiento vertical con un dedo y horizontal con dos */
+}
+
+.productosNuevos::-webkit-scrollbar {
+    display: none; /* Oculta la barra de desplazamiento en navegadores WebKit como Chrome y Safari */
+}
+
+.productosNuevos {
+    -ms-overflow-style: none; /* Oculta la barra de desplazamiento en IE y Edge */
+}
+/* ... Tus estilos existentes ... */
+
+
+
+.prevButton {
+  left: 10px;
+}
+
+.nextButton {
+  right: 10px;
+}
+

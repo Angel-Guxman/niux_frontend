@@ -1,0 +1,14 @@
+.cor {
+    background-image: url(../../public/Images/pru1.png);
+    background-attachment: fixed;
+    background-size: cover;
+    animation: zoom 15s infinite alternate;
+  }
+
+  @keyframes zoom {
+    from { background-size: 100%; }
+    to { background-size: 110%; }
+  }
+
+ 
+  
